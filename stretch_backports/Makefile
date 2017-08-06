@@ -13,7 +13,7 @@ build:
 run: build output
 	docker run -it \
 		--rm \
-		-v output:/output \
+		-v $$(pwd)/output:/home/aviau/output \
 		-v /run/user/$$( id -u)/gnupg/S.gpg-agent.ssh:/run/user/$$( id -u)/gnupg/S.gpg-agent.ssh \
 		-v ~/.bash_history:/home/aviau/.bash_history \
 		-v ~/.ssh/config:/home/aviau/.ssh/config:ro \
