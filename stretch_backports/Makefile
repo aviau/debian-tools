@@ -3,6 +3,7 @@ output:
 
 .PHONY: build
 build:
+	docker pull debian:stretch
 	docker build \
 	--build-arg userid=$$(id -u) \
 	--build-arg username=$$(id -u --name) \
