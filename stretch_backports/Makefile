@@ -16,6 +16,7 @@ run: build output
 		--rm \
 		--privileged \
 		-v /dev/bus/usb:/dev/bus/usb \
+		-v /dev/usb:/dev/usb \
 		-v $$(pwd)/output:/home/aviau/output \
 		-v /run/user/$$( id -u)/gnupg/S.gpg-agent.ssh:/run/user/$$( id -u)/gnupg/S.gpg-agent.ssh \
 		-v ~/.bash_history:/home/aviau/.bash_history \
