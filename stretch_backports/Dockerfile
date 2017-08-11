@@ -1,6 +1,7 @@
 FROM debian:stretch
 
 RUN bash -c "echo 'deb http://ftp.debian.org/debian stretch-backports main' >> /etc/apt/sources.list"
+RUN bash -c "echo 'deb-src http://ftp.debian.org/debian stretch-backports main' >> /etc/apt/sources.list"
 
 RUN apt-get update && \
     apt-get install -y \
