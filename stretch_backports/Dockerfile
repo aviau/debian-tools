@@ -7,6 +7,7 @@ RUN apt-get update && \
         sudo \
         git \
         gnupg2 \
+        scdaemon \
         vim \
         build-essential \
         cowbuilder \
