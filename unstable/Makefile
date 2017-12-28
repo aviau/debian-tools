@@ -25,6 +25,7 @@ run: build output
 		-v ~/.gbp.conf:/home/aviau/.gbp.conf:ro \
 		-v ~/.gnupg:/home/aviau/.gnupg \
 		-v ~/.bashrc:/home/aviau/.bashrc:ro \
+		-v ~/.quiltrc-dpkg:/home/aviau/.quiltrc-dpkg:ro \
 		-e SSH_AUTH_SOCK=/tmp/ssh_auth_sock \
 		debian-tools-unstable \
 		bash
