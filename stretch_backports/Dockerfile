@@ -12,6 +12,7 @@ RUN apt-get update && \
         vim \
         build-essential \
         cowbuilder \
+        quilt \
         git-buildpackage
 
 ARG userid
