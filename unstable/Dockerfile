@@ -11,6 +11,7 @@ RUN apt-get update && \
         build-essential \
         cowbuilder \
         quilt \
+        pkg-perl-tools \
         git-buildpackage
 
 ARG userid
