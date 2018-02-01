@@ -28,6 +28,7 @@ run: build output
 		-v ~/.vimrc:/home/aviau/.vimrc:ro \
 		-v ~/.vim:/home/aviau/.vim:ro \
 		-v ~/.gbp.conf:/home/aviau/.gbp.conf:ro \
+		-v ~/bin:/home/aviau/bin:ro \
 		-v ~/.gnupg:/home/aviau/.gnupg \
 		-v /run/user/$$( id -u)/gnupg/S.gpg-agent:/home/aviau/.gnupg/S.gpg-agent \
 		-v ~/.bashrc:/home/aviau/.bashrc:ro \
