@@ -12,7 +12,8 @@ RUN apt-get update && \
         cowbuilder \
         quilt \
         pkg-perl-tools \
-        git-buildpackage
+        git-buildpackage \
+        dh-make-golang
 
 ARG userid
 ARG username
